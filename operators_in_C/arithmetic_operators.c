@@ -26,7 +26,15 @@ int main()
     //example on precedence arithmetic operators
 
     int a = 2, b = 3, c = 4, d = 5;
+
+    //here the * and / have the same precedence
+    //so we will start from left to right
+    //first (a * b) then / c
     printf("a * b / c = %d\n", a * b / c);
+
     printf("a + b - c = %d\n", a + b - c);
+
     printf("a + b * d - c %% a = %d\n", a + b * d - c % a);
+
 }
+
