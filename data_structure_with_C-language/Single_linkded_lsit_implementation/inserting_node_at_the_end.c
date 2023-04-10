@@ -3,6 +3,7 @@
 
 
 //inserting a node at the end of single linked list
+//the time complexity of this way is O(n) because we traverse whole list
 
 
 struct Node
