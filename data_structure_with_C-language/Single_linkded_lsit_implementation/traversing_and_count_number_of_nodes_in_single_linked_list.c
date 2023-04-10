@@ -73,4 +73,3 @@ void count_of_nodes(struct Node *head)
     printf("%d", count);
 
 }
-
