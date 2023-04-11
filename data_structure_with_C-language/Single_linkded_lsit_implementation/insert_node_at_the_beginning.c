@@ -48,6 +48,15 @@ int main()
 
 }
 
+/**
+ * in add_beg function
+ * we pass head to her by value
+    this means we send copy of the memory address
+    and any changes made to the parameter inside function
+    will not reflect on the original parameter
+    so head here is a local to the function
+*/
+
 struct Node* add_beg(struct Node *head, int data)
 {
         struct Node *ptr = NULL;
