@@ -35,6 +35,9 @@ int main()
 
         head = add_beg(head, data);
 
+	/* If we do not intend to traverse the linked list
+         after adding a new node at the beginning,
+        there is no need to set current equal to head.*/
         current = head;
 
         while (current != NULL)
