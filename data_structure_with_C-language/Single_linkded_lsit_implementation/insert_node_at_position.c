@@ -3,6 +3,7 @@
 
 /*
     insert node at particular position
+    time complexity is O(n)
 */
 
 struct Node
