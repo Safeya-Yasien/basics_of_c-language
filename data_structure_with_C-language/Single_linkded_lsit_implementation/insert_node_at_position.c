@@ -19,13 +19,16 @@ int main()
 
     head = (struct Node *)malloc(sizeof(struct Node));
 
-    head->data = 50;
+    head->data = 60;
     head->link = NULL;
 
+    add_node_at_end(head, 40);
     add_node_at_end(head, 90);
-    add_node_at_end(head, 3);
+    add_node_at_end(head, 13);
+    add_node_at_end(head, 7);
+    add_node_at_end(head, 6);
 
-    int data = 67, position = 3;
+    int data = 77, position = 4;
 
     add_at_pos(head, data, position);
 
@@ -57,7 +60,7 @@ void add_node_at_end(struct Node* head, int data)
 
 }
 
-void add_at_pos(struct Node *head, int data, int pos)
+void add_at_pos(struct Node *head, int data, int position)
 {
     struct Node* new_node = NULL, *ptr = NULL;
     ptr = head;
@@ -66,16 +69,15 @@ void add_at_pos(struct Node *head, int data, int pos)
     new_node->data = data;
     new_node->link = NULL;
 
-    pos--;
+    position--;
 
-    while (pos != 1)
+    while (position != 1)
     {
         ptr = ptr->link;
-        pos--;
+        position--;
     }
 
     new_node->link = ptr->link;
     ptr->link = new_node;
 }
-
 
