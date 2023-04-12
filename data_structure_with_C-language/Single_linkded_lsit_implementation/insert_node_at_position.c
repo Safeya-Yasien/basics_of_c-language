@@ -71,7 +71,7 @@ void add_at_pos(struct Node *head, int data, int position)
 
     position--;
 
-    while (position != 1)
+    while (position > 0)
     {
         ptr = ptr->link;
         position--;
