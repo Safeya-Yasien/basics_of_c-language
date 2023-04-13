@@ -1,0 +1,11 @@
+this mean when i want to add node at the end of linked list will not need to pass by reference because we change the nodes which will be after head pointer and will not need to change head pointer itself 
+and in adding node at the beginning we must create return function of pass pointer by reference to make head pointer point to the new node which will be inserted at the beginning of the list not after head 
+this right?
+
+Yes, you are correct!
+
+When adding a new node to the end of the linked list, you do not need to pass the head pointer by reference, because you are only modifying the link pointer of the last node in the list to point to the new node. You are not changing the head pointer itself. So, you can simply pass the head pointer by value to the function.
+
+On the other hand, when adding a new node to the beginning of the linked list, you need to modify the head pointer itself to point to the new node. In this case, you need to pass the head pointer by reference as a double pointer, so that you can modify the head pointer itself inside the function.
+
+In order to modify the head pointer inside the function and have those modifications reflected in the main function, you can pass the head pointer by reference using a double pointer, or alternatively, you can create a return function that returns the modified head pointer to the main function.
