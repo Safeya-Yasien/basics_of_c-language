@@ -54,6 +54,14 @@ void add_at_end(struct Node *head, int data)
 
 }
 
+/*
+ * we not need to return head we can make void function
+ * because all changes reflected in main
+ * and no need to change head pointer
+ * so there is no need to return head
+ * and this notes in note.txt with details
+ */
+
 struct Node* del_last(struct Node *head)
 {
     if (head == NULL)
