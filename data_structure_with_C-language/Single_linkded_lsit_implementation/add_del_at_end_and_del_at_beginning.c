@@ -107,6 +107,16 @@ void del_at_beginning(struct Node **head)
 
         free(temp);
         temp = NULL;
+
+        //OR
+        /*
+            struct Node *temp = NULL;
+            temp = *head;
+              temp = temp->link;
+              free (*head);
+              *head = NULL;
+              *head = temp;
+        */
     }
 
 }
