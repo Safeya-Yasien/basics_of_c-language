@@ -3,6 +3,7 @@
 
 /*
     delete first node of the list
+    time complexity is O(1)
 */
 
 struct Node
