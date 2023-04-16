@@ -62,7 +62,7 @@ void del_pos(struct Node **head, int position)
 
         if (*head == NULL)
             printf("list is already empty");
-        else if (position == 1)
+        else if (position == 0)
         {
             *head = current->link;
             free(current);
@@ -70,7 +70,7 @@ void del_pos(struct Node **head, int position)
         }
         else
         {
-            while (position != 1)
+            while (position > 0)
             {
                 previous = current;
                 current = current->link;
